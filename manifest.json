@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "RegHack",
+  "version": "1.0",
+
+  "description": "To auto fill data",
+
+  "icons": {
+    "48": "icons/reghack-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://org.devfolio.co/new/*","https://manage.devpost.com/challenges/*"],
+      "js":["reghack.js"]
+    }
+  ]
+}
