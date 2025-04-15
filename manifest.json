@@ -8,11 +8,18 @@
   "icons": {
     "48": "icons/reghack-48.png"
   },
+  "permissions":["activeTab"],
+
+
+  "browser_action":{
+    "default_icon": "icons/reghack-48.png",
+    "default_title":"FUCK U",
+    "default_popup":"popup/regpop.html"
+  },
 
   "content_scripts": [
     {
-      "matches": ["https://org.devfolio.co/new/*","https://manage.devpost.com/challenges/*"],
-      "js":["reghack.js"]
+      "matches": ["https://org.devfolio.co/new/*","https://manage.devpost.com/challenges/*"]
     }
   ]
 }
