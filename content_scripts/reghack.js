@@ -8,6 +8,7 @@
     window.hasRun = true
     
     
+    
     function enterAllDetails(){
         document.body.style.border = "3px solid purple"
         let name = "HOOKA BONGS"

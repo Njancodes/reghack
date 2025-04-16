@@ -12,14 +12,20 @@ function sendMessageToCS(tabs){
 function listenForClicks(){
     document.addEventListener("click", (e)=>{
         console.log(e.target.id)
-        if (e.target.tagName === "BUTTON" && e.target.id === "enter-details") {
-            console.log("Going to sent messaege")
+        if (e.target.tagName === "BUTTON" && e.target.id === "submit-details") {
+            console.log("Going to sent messaege for submitting the details")
             browser.tabs
                 .query({active: true, currentWindow: true})
                 .then(sendMessageToCS)
                 .catch((error)=>{
                     console.error(error.message)
                 })
+          }else if(e.target.tagName === "BUTTON" && e.target.id === "enter-details"){
+            console.log("Going to send the message for entering the details")
+            browser.tabs.create({
+                active:true,
+                url:"/page/page.html"
+            })
           }
     })
 }

@@ -1,0 +1,29 @@
+body{
+    background-color: #333;
+    padding: 0;
+    margin: 0;
+}
+
+.website-btn{
+    margin-left: 10px;
+    width: 250px;
+    height: 67px;
+    border-radius: 50px;
+    border: 0px;
+}
+
+.website-btn img {
+    object-fit: contain;
+    height: 43px;
+}
+
+
+#website-chooser{
+    background-color: #fff;
+    width: 100%;
+    margin-top: 123px;
+    height: 93px;
+    display: flex;
+    padding: 0px 67px;
+    align-items: center;
+}
